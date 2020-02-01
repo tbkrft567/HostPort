@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Title</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <!--
+      _____ _     _       _           _ _     _   _                          _                          _            _             _    _                __           
+     |_   _| |   (_)     (_)         ( ) |   | | | |                        | |                        ( )          | |           | |  (_)              / _|          
+       | | | |__  _ ___   _ ___ _ __ |/| |_  | |_| |__   ___    ___ ___   __| | ___   _   _  ___  _   _|/ _ __ ___  | | ___   ___ | | ___ _ __   __ _  | |_ ___  _ __ 
+       | | | '_ \| / __| | / __| '_ \  | __| | __| '_ \ / _ \  / __/ _ \ / _` |/ _ \ | | | |/ _ \| | | | | '__/ _ \ | |/ _ \ / _ \| |/ / | '_ \ / _` | |  _/ _ \| '__|
+       | | | | | | \__ \ | \__ \ | | | | |_  | |_| | | |  __/ | (_| (_) | (_| |  __/ | |_| | (_) | |_| | | | |  __/ | | (_) | (_) |   <| | | | | (_| | | || (_) | |   
+       \_/ |_| |_|_|___/ |_|___/_| |_|  \__|  \__|_| |_|\___|  \___\___/ \__,_|\___|  \__, |\___/ \__,_| |_|  \___| |_|\___/ \___/|_|\_\_|_| |_|\__, | |_| \___/|_|   
+                                                                                       __/ |                                                     __/ |                
+                                                                                      |___/                                                     |___/                 
+     __   __                                                        _                 _                              _               _                                
+     \ \ / /                                                       | |               | |                            | |             (_)                               
+      \ V /___  _   _   _ __ ___   __ _ _   _    __ _  ___     __ _| |__   ___  _   _| |_   _   _  ___  _   _ _ __  | |__  _   _ ___ _ _ __   ___  ___ ___            
+       \ // _ \| | | | | '_ ` _ \ / _` | | | |  / _` |/ _ \   / _` | '_ \ / _ \| | | | __| | | | |/ _ \| | | | '__| | '_ \| | | / __| | '_ \ / _ \/ __/ __|           
+       | | (_) | |_| | | | | | | | (_| | |_| | | (_| | (_) | | (_| | |_) | (_) | |_| | |_  | |_| | (_) | |_| | |    | |_) | |_| \__ \ | | | |  __/\__ \__ \           
+       \_/\___/ \__,_| |_| |_| |_|\__,_|\__, |  \__, |\___/   \__,_|_.__/ \___/ \__,_|\__|  \__, |\___/ \__,_|_|    |_.__/ \__,_|___/_|_| |_|\___||___/___/           
+                                         __/ |   __/ |                                       __/ |                                                                    
+                                        |___/   |___/                                       |___/                                                                     
+     -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="style/tooltip.css">
+   <link rel="stylesheet" href="style/Modal.css">
+   <link rel="stylesheet" href="style/menu.css">
+   <link rel="stylesheet" href="style/project.css">
+   <link rel="stylesheet" href="style/stylesheet.css">
+   <link rel="stylesheet" href="style/footerSection.css">
+</head>
+
+<body>
+   <div class="collapsible-menu  responsive-menu " onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <div class="menu-content">
+         <div class="centerDiv">
+            <ul>
+               <li class="menu">
+                  <a href="index.html">ABOUT ME</a>
+               </li>
+               <li class="menu">
+                  <a href="coding.html">CODING DOJO</a>
+               </li>
+               <li class="menu selected">
+                  <a href="portfolio.html">PORTFOLIO</a>
+               </li>
+               <li class="menu">
+                  <a href="projectDetail.html">PROJECT DETAIL</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="headerContainer">
+      <div class="centerDiv natural-menu">
+         <ul>
+            <li class="menu">
+               <a href="index.html">ABOUT ME</a>
+            </li>
+            <li class="menu">
+               <a href="coding.html">CODING DOJO</a>
+            </li>
+            <img id="logoMenu" src="images/logo_slim.png" alt="Website Logo">
+            <li class="menu selected">
+               <a href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="menu">
+               <a href="projectDetail.html">PROJECT DETAIL</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <!-- The Modal/Lightbox -->
+   <div class="contentContainer">
+      <!-- ************1*********** -->
+      <div class="banner" id="projSport">
+         <div class="tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/SportsSimulation">SPORTS
+                  SIMULATOR</a></p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projSport">Python & Django</a></p>
+
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/0Python_SportSimulator/wireframe.PNG"
+               onclick="openModal(1);currentSlide(1,1)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/0Python_SportSimulator/renderNewSeason.PNG"
+               onclick="openModal(1);currentSlide(2,1)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/0Python_SportSimulator/Dashboard.PNG"
+               onclick="openModal(1);currentSlide(3,1)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/0Python_SportSimulator/SimulateGame.PNG"
+               onclick="openModal(1);currentSlide(4,1)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/0Python_SportSimulator/teamSchedule.PNG"
+               onclick="openModal(1);currentSlide(5,1)" class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal1" class="modal">
+         <span class="close cursor" onclick="closeModal(1)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides1">
+               <div class="numbertext">1 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/wireframe.PNG"
+                  style="width:55%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides1">
+               <div class="numbertext">2 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/renderNewSeason.PNG"
+                  style="width:50%; padding:2%" alt="Select Season Settings">
+            </div>
+
+            <div class="mySlides1">
+               <div class="numbertext">3 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/Dashboard.PNG"
+                  style="width:50%; padding:2%" alt="Season Dashboard">
+            </div>
+
+            <div class="mySlides1">
+               <div class="numbertext">4 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/SimulateGame.PNG"
+                  style="width:55%; padding:2%" alt="Simulate Game">
+            </div>
+            <div class="mySlides1">
+               <div class="numbertext">5 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/teamSchedule.PNG"
+                  style="width:40%; padding:2%" alt="Team Schedule">
+            </div>
+            <div class="mySlides1">
+               <div class="numbertext">6 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/Standings.PNG"
+                  style="width:50%; padding:2%" alt="Standings">
+            </div>
+            <div class="mySlides1">
+               <div class="numbertext">7 / 7</div>
+               <img class="altPhoto1" src="images/Project Folder/0Python_SportSimulator/Roster.PNG"
+                  style="width:40%; padding:2%" alt="Roster">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption1"></p>
+            </div>
+         </div>
+      </div>
+      <!-- ***********2************ -->
+      <div class="banner" id="projQuote">
+         <div class="tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/pythonExam">SHARE A QUOTE</a></p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projQuote">Python & Django</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/1Python_BeltExam_/Wireframe.PNG" onclick="openModal(2);currentSlide(1,2)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Python_BeltExam_/LoginRegistration.PNG"
+               onclick="openModal(2);currentSlide(2,2)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Python_BeltExam_/QuoteBoard.PNG" onclick="openModal(2);currentSlide(3,2)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Python_BeltExam_/Userdashboard.PNG"
+               onclick="openModal(2);currentSlide(4,2)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Python_BeltExam_/EditQuotes.PNG" onclick="openModal(2);currentSlide(5,2)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal2" class="modal">
+         <span class="close cursor" onclick="closeModal(2)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides2">
+               <div class="numbertext">1 / 5</div>
+               <img class="altPhoto2" src="images/Project Folder/1Python_BeltExam_/Wireframe.PNG"
+                  style="width:50%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides2">
+               <div class="numbertext">2 / 5</div>
+               <img class="altPhoto2" src="images/Project Folder/1Python_BeltExam_/LoginRegistration.PNG"
+                  style="width:40%; padding:2%" alt="Login and Registration">
+            </div>
+
+            <div class="mySlides2">
+               <div class="numbertext">3 / 5</div>
+               <img class="altPhoto2" src="images/Project Folder/1Python_BeltExam_/QuoteBoard.PNG"
+                  style="width:80%; padding:2%" alt="Quote Dashboard">
+            </div>
+
+            <div class="mySlides2">
+               <div class="numbertext">4 / 5</div>
+               <img class="altPhoto2" src="images/Project Folder/1Python_BeltExam_/Userdashboard.PNG"
+                  style="width:55%; padding:2%" alt="User Dashboard">
+            </div>
+            <div class="mySlides2">
+               <div class="numbertext">5 / 5</div>
+               <img class="altPhoto2" src="images/Project Folder/1Python_BeltExam_/EditQuotes.PNG"
+                  style="width:50%; padding:2%" alt="Edit Quote Page">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption2"></p>
+            </div>
+         </div>
+      </div>
+      <!-- ***********3************ -->
+      <div class="banner" id="projPets">
+         <div class=" tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/MEAN_Exam">PET ADOPTION AGENCY</a></p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projPets">M-E-A-N</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/1MEAN_beltExam_/WireFrame.PNG" onclick="openModal(3);currentSlide(1,3)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1MEAN_beltExam_/Dashboard.PNG"
+               onclick="openModal(3);currentSlide(2,3)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1MEAN_beltExam_/Add Pet.PNG" onclick="openModal(3);currentSlide(3,3)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1MEAN_beltExam_/Edit Pet.PNG" onclick="openModal(3);currentSlide(4,3)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1MEAN_beltExam_/Show Pet.PNG" onclick="openModal(3);currentSlide(4,3)"
+               class="hover-shadow">f
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal3" class="modal">
+         <span class="close cursor" onclick="closeModal(3)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides3">
+               <div class="numbertext">1 / 5</div>
+               <img class="altPhoto3" src="images/Project Folder/1MEAN_beltExam_/WireFrame.PNG"
+                  style="width:50%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides3">
+               <div class="numbertext">2 / 5</div>
+               <img class="altPhoto3" src="images/Project Folder/1MEAN_beltExam_/Dashboard.PNG"
+                  style="width:50%; padding:2%" alt="Pets Dashboard">
+            </div>
+
+            <div class="mySlides3">
+               <div class="numbertext">3 / 5</div>
+               <img class="altPhoto3" src="images/Project Folder/1MEAN_beltExam_/Add Pet.PNG"
+                  style="width:50%; padding:2%" alt="Add New Pet">
+            </div>
+
+            <div class="mySlides3">
+               <div class="numbertext">4 / 5</div>
+               <img class="altPhoto3" src="images/Project Folder/1MEAN_beltExam_/Edit Pet.PNG"
+                  style="width:50%; padding:2%" alt="Edit A Pet">
+            </div>
+            <div class="mySlides3">
+               <div class="numbertext">5 / 5</div>
+               <img class="altPhoto3" src="images/Project Folder/1MEAN_beltExam_/Show Pet.PNG"
+                  style="width:50%; padding:2%" alt="Show A Pet">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption3"></p>
+            </div>
+         </div>
+      </div>
+      <!-- ***********4************ -->
+      <div class="banner" id="projGroup">
+         <div class=" tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/RubyExam1">GROUP ORGANIZER</a></p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projGroup">Ruby on Rails</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/1Ruby_BeltExam_/wireframe.PNG" onclick="openModal(4);currentSlide(1,4)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Ruby_BeltExam_/LoginRegistration.PNG"
+               onclick="openModal(4);currentSlide(2,4)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Ruby_BeltExam_/GroupDashboard.PNG" onclick="openModal(4);currentSlide(3,4)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Ruby_BeltExam_/GroupMembers.PNG" onclick="openModal(4);currentSlide(4,4)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal4" class="modal">
+         <span class="close cursor" onclick="closeModal(4)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides4">
+               <div class="numbertext">1 / 4</div>
+               <img class="altPhoto4" src="images/Project Folder/1Ruby_BeltExam_/wireframe.PNG"
+                  style="width:50%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides4">
+               <div class="numbertext">2 / 4</div>
+               <img class="altPhoto4" src="images/Project Folder/1Ruby_BeltExam_/LoginRegistration.PNG"
+                  style="width:50%; padding:2%" alt="Login and Registration">
+            </div>
+
+            <div class="mySlides4">
+               <div class="numbertext">3 / 4</div>
+               <img class="altPhoto4" src="images/Project Folder/1Ruby_BeltExam_/GroupDashboard.PNG"
+                  style="width:60%; padding:2%" alt="Group Dashboard">
+            </div>
+
+            <div class="mySlides4">
+               <div class="numbertext">4 / 4</div>
+               <img class="altPhoto4" src="images/Project Folder/1Ruby_BeltExam_/GroupMembers.PNG"
+                  style="width:60%; padding:2%" alt="Group Members Page">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption4"></p>
+            </div>
+         </div>
+      </div>
+      <!-- ***********5************ -->
+      <div class="banner" id="WebFunds">
+         <div class=" tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/WebFunds">WEB FUNDAMENTALS</a></p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#WebFunds">HTML & CSS</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/1Web_funds/Modernize.PNG" onclick="openModal(5);currentSlide(1,5)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Web_funds/theInternet.PNG" onclick="openModal(5);currentSlide(2,5)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/1Web_funds/aboutPython.PNG" onclick="openModal(5);currentSlide(3,5)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal5" class="modal">
+         <span class="close cursor" onclick="closeModal(5)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides5">
+               <div class="numbertext">1 / 3</div>
+               <img class="altPhoto5" src="images/Project Folder/1Web_funds/Modernize.PNG" style="width:50%; padding:2%"
+                  alt="Modernize">
+            </div>
+
+            <div class="mySlides5">
+               <div class="numbertext">2 / 3</div>
+               <img class="altPhoto5" src="images/Project Folder/1Web_funds/theInternet.PNG"
+                  style="width:50%; padding:2%" alt="The Internet">
+            </div>
+
+            <div class="mySlides5">
+               <div class="numbertext">3 / 3</div>
+               <img class="altPhoto5" src="images/Project Folder/1Web_funds/aboutPython.PNG"
+                  style="width:60%; padding:2%" alt="About Python">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption5"></p>
+            </div>
+         </div>
+      </div>
+      <!-- ***********6************ -->
+      <div class="banner" id="projTV">
+         <div class=" tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/TV_Shows">TV SHOW MANAGER</a>
+            </p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projTV">Python & Django</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/2Python_TVShows_/wireframe.png" onclick="openModal(6);currentSlide(1,6)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/2Python_TVShows_/AllShows.PNG" onclick="openModal(6);currentSlide(2,6)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/2Python_TVShows_/CreateTV_Series.PNG"
+               onclick="openModal(6);currentSlide(3,6)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/2Python_TVShows_/EditTV_Series.PNG" onclick="openModal(6);currentSlide(4,6)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/2Python_TVShows_/ShowTV_Series.PNG" onclick="openModal(6);currentSlide(5,6)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal6" class="modal">
+         <span class="close cursor" onclick="closeModal(6)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides6">
+               <div class="numbertext">1 / 5</div>
+               <img class="altPhoto6" src="images/Project Folder/2Python_TVShows_/wireframe.png"
+                  style="width:50%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides6">
+               <div class="numbertext">2 / 5</div>
+               <img class="altPhoto6" src="images/Project Folder/2Python_TVShows_/AllShows.PNG"
+                  style="width:60%; padding:2%" alt="TV Show Dashboard">
+            </div>
+
+            <div class="mySlides6">
+               <div class="numbertext">3 / 5</div>
+               <img class="altPhoto6" src="images/Project Folder/2Python_TVShows_/CreateTV_Series.PNG"
+                  style="width:30%; padding:2%" alt="Create TV Show Page">
+            </div>
+
+            <div class="mySlides6">
+               <div class="numbertext">4 / 5</div>
+               <img class="altPhoto6" src="images/Project Folder/2Python_TVShows_/EditTV_Series.PNG"
+                  style="width:30%; padding:2%" alt="Edit TV Show Page">
+            </div>
+            <div class="mySlides6">
+               <div class="numbertext">5 / 5</div>
+               <img class="altPhoto6" src="images/Project Folder/2Python_TVShows_/ShowTV_Series.PNG"
+                  style="width:30%; padding:2%" alt="View TV Show Page">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption6"></p>
+            </div>
+         </div>
+      </div>
+
+      <!-- *************7********** -->
+      <div class="banner" id="projNinja">
+         <div class="tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/ninjaGold">NINJA GOLD</a>
+            </p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projNinja">Python & Django</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/3Python_NinjaGold_/wireframe.png" onclick="openModal(7);currentSlide(1,7)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/3Python_NinjaGold_/GoalSetting.PNG" onclick="openModal(7);currentSlide(2,7)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/3Python_NinjaGold_/Dashboard.PNG" onclick="openModal(7);currentSlide(3,7)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal7" class="modal">
+         <span class="close cursor" onclick="closeModal(7)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides7">
+               <div class="numbertext">1 / 5</div>
+               <img class="altPhoto7" src="images/Project Folder/3Python_NinjaGold_/wireframe.png"
+                  style="width:55%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides7">
+               <div class="numbertext">2 / 5</div>
+               <img class="altPhoto7" src="images/Project Folder/3Python_NinjaGold_/GoalSetting.PNG"
+                  style="width:50%; padding:2%" alt="Goal Setting Page">
+            </div>
+
+            <div class="mySlides7">
+               <div class="numbertext">3 / 5</div>
+               <img class="altPhoto7" src="images/Project Folder/3Python_NinjaGold_/Dashboard.PNG"
+                  style="width:75%; padding:2%" alt="Ninja Gold Dashboard">
+            </div>
+
+            <div class="mySlides7">
+               <div class="numbertext">4 / 5</div>
+               <img class="altPhoto7" src="images/Project Folder/3Python_NinjaGold_/Victory.PNG"
+                  style="width:25%; padding:2%" alt="Goal Achieved Page">
+            </div>
+            <div class="mySlides7">
+               <div class="numbertext">5 / 5</div>
+               <img class="altPhoto7" src="images/Project Folder/3Python_NinjaGold_/Failure.PNG"
+                  style="width:50%; padding:2%" alt="Goal Failed Page">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption7"></p>
+            </div>
+         </div>
+      </div>
+      <!-- *************8********** -->
+      <div class="banner" id="projWall">
+         <div class="tooltip_">
+            <p class="projectTitle"><a href="https://github.com/tbkrft567/Portfolio/tree/master/theWall">THE WALL</a>
+            </p>
+            <span class="tooltiptext">Navigate to Github for Project Code</span>
+         </div>
+         <p class="projectPlatform"><a href="projectDetail.html#projWall">Ruby on Rails</a></p>
+      </div>
+      <div class="subBanner"></div>
+      <div class="row_">
+         <div class="column_ primaryImage">
+            <img src="images/Project Folder/4Python_Wall_/wireframe.png" onclick="openModal(8);currentSlide(1,8)"
+               class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder/4Python_Wall_/LoginRegistration.PNG"
+               onclick="openModal(8);currentSlide(2,8)" class="hover-shadow">
+         </div>
+         <div class="column_ secondaryImage">
+            <img src="images/Project Folder//4Python_Wall_/MessageBoard.PNG" onclick="openModal(8);currentSlide(3,8)"
+               class="hover-shadow">
+         </div>
+      </div>
+      <!-- The Modal/Lightbox -->
+      <div id="myModal8" class="modal">
+         <span class="close cursor" onclick="closeModal(8)">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides8">
+               <div class="numbertext">1 / 3</div>
+               <img class="altPhoto8" src="images/Project Folder/4Python_Wall_/wireframe.png"
+                  style="width:80%; padding:2%" alt="Wireframe">
+            </div>
+
+            <div class="mySlides8">
+               <div class="numbertext">2 / 3</div>
+               <img class="altPhoto8" src="images/Project Folder/4Python_Wall_/LoginRegistration.PNG"
+                  style="width:50%; padding:2%" alt="Login and Registration">
+            </div>
+
+            <div class="mySlides8">
+               <div class="numbertext">3 / 3</div>
+               <img class="altPhoto8" src="images/Project Folder/4Python_Wall_/MessageBoard.PNG"
+                  style="width:55%; padding:2%" alt="Messaging Board">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+               <p id="caption8"></p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="footerSection banner">
+      <div class="contentContainer">
+         <p><b>Email:</b> tbkrft567@gmail.com</p>
+         <p><b>Built By:</b> Zach Kraft</p>
+         <p><b>Phone:</b> (512)567-7011</p>
+      </div>
+   </div>
+
+
+   <!-- ******************************************************************************************************************************** -->
+   <Script>
+      function openModal(n) {
+         document.getElementById("myModal" + n).style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal(n) {
+         document.getElementById("myModal" + n).style.display = "none";
+      }
+      var slideIndex = 1;
+      var slideSet = 1
+      showSlides(slideIndex, slideSet);
+
+      // Next/previous controls
+      function plusSlides(n, s) {
+         showSlides(slideIndex += n, s);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n, s) {
+         showSlides(slideIndex = n, s);
+      }
+
+      function showSlides(n, s) {
+
+         var i;
+         var slides = document.getElementsByClassName("mySlides" + s); //main photo
+         var altDesc = document.getElementsByClassName("altPhoto" + s); //thumbnail
+         var captionText = document.getElementById("caption" + s);
+
+         if (n > slides.length) {
+            slideIndex = 1
+         }
+         if (n < 1) { slideIndex = slides.length }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+
+         }
+         slides[slideIndex - 1].style.display = "block";
+
+         captionText.innerHTML = altDesc[slideIndex - 1].alt;
+
+      }
+      function myFunction(selection) {
+         selection.classList.toggle("change")
+         document.getElementsByClassName("menu-content")[0].classList.toggle('openMenu')
+      }
+   </Script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" -->
+<!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

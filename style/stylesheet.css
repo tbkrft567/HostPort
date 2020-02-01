@@ -1,0 +1,87 @@
+/* 
+   464159
+   6C7B95
+   8BBABB
+   C7F0DB
+*/
+
+
+   
+.headerContainer{
+   width: 95%;
+   margin: 0px auto;
+   text-align: center;
+   /* outline: 2px solid fuchsia; */
+}
+.contentContainer{
+   width: 95%;
+   margin: 0px auto;
+   text-align: center;
+}
+
+.paragraphContent{
+   text-align: justify;
+   text-justify: inter-word;
+   /* margin-left: 15px; */
+   font-size: 13px;
+   display: inline-block;
+   width: 95%;
+   /* text-indent: 10px; */
+   /* outline: 2px solid fuchsia; */
+}
+.highlighContent{
+   display: list-item;
+   text-align: webkit-match-parent;
+   text-align: justify;
+   text-justify: inter-word;
+   font-size: 13px;
+   display: inline-block;
+   width: 95%;
+}
+.contentContainer ul{
+   /* margin-top: 35px; */
+}
+.contentBoundaries{
+   width: 80%;
+   margin: 8px 10%;
+}
+
+.banner{
+   height: 50px;
+   width: 95%;
+   background-image: linear-gradient(#C7F0DB, #8BBABB, #C7F0DB);
+   border-radius: 7px;
+   margin: 25px 2.65% 0px 2.65%;
+}
+.subBanner{
+   height: 15px;
+   width: 80%;
+   /* margin: 0px auto;   */
+   background-color: #3f3b4d ;
+   border-radius: 2px;
+   margin: 8px 10%;
+}
+
+.title{
+font-family: 'bahnschrift light', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.emphasize {
+   font-size: 1.75em;
+   font-weight: bold;
+   margin: 10px 0px 5px 0px;
+}
+.superEmphasize {
+   font-size: 2.5em;
+   font-weight: bold;
+}
+
+.footnoteFont {
+   font-size: 7px;
+   margin: 0px;
+}
+#codingDojoLogo {
+   display: inline-block;
+   width: 80%;
+   border-bottom: 10px solid #3f3b4d;
+   margin-bottom: 5px;
+}

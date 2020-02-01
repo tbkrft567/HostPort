@@ -1,0 +1,26 @@
+      .allThumbnails {
+         padding: 20px;
+      }
+
+      .performThumbnails {
+         vertical-align: top;
+         min-height: 250px;
+         width: 250px;
+         border: 5px solid black;
+         display: inline-block;
+         margin: 15px;
+         box-shadow: 5px 5px;
+         border-radius: 5px;
+         padding: 15px;
+         letter-spacing: .5px;
+      }
+
+      .performThumbnails:hover {
+         margin-top: 1px;
+         box-shadow: 6px 6px;
+         background-image: linear-gradient(rgba(139, 186, 187, 0.5), rgba(199, 240, 219, 0.3));
+      }
+
+      #blackBeltNinja {
+         width: 100px;
+      }

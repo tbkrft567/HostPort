@@ -1,0 +1,44 @@
+.projectTitle{
+   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+   font-family: 'bahnschrift light', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   /* font-weight: bold; */
+   font-size: 22px;
+   /* text-decoration: underline; */
+   color: #3f3b4d;
+   margin: 0px;
+   letter-spacing: 1px;
+}
+.projectTitle a{
+   color: #3f3b4d;
+   text-decoration: none;
+}
+.projectTitle a:hover{
+   color: #3f3b4d;
+   text-decoration: none;
+}
+.projectPlatform{
+   /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+   font-family: 'bahnschrift light', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 12px;
+   color: #6C7B95;
+   margin: 0px;
+}
+.projectPlatform a{
+   color: #6C7B95;
+   text-decoration: none;
+}
+.projectPlatform a:hover{
+   color: #6C7B95;
+}
+.projectDetails{
+   text-align: justify;
+   text-justify: inter-word;
+   width: 80%;
+   margin: 8px 10%;
+}
+.projectDetails h6{
+   margin-bottom: 10px;
+}
+.projectDetails ul{
+   margin: 0px;
+}

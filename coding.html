@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Title</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- 
+   464159
+   6c7b95
+   8BBABB
+   C7F0DB
+ -->
+   <style>
+      /* .portfolioPhotos img {
+      margin: 3px;
+      width: 100px;
+      border: 2px ridge #464159;
+   } */
+   </style>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <!-- <script src="javascript/modal.js"></script> -->
+   <link rel="stylesheet" href="style/blackBeltNinja.css">
+   <link rel="stylesheet" href="style/performanceThumbnails.css">
+   <link rel="stylesheet" href="style/Modal.css">
+   <link rel="stylesheet" href="style/menu.css">
+   <link rel="stylesheet" href="style/stacks.css">
+   <link rel="stylesheet" href="style/stylesheet.css">
+   <link rel="stylesheet" href="style/footerSection.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="collapsible-menu  responsive-menu " onclick="myFunction(this)">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <div class="menu-content">
+            <div class="centerDiv">
+               <ul>
+                  <li class="menu">
+                     <a href="index.html">ABOUT ME</a>
+                  </li>
+                  <li class="menu selected">
+                     <a href="coding.html">CODING DOJO</a>
+                  </li>
+                  <li class="menu">
+                     <a href="portfolio.html">PORTFOLIO</a>
+                  </li>
+                  <li class="menu">
+                     <a href="projectDetail.html">PROJECT DETAIL</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="headerContainer">
+      <div class="centerDiv natural-menu">
+         <ul>
+            <li class="menu">
+               <a href="index.html">ABOUT ME</a>
+            </li>
+            <li class="menu selected">
+               <a href="coding.html">CODING DOJO</a>
+            </li>
+            <img id="logoMenu" src="images/logo_slim.png" alt="Website Logo">
+            <li class="menu">
+               <a href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="menu">
+               <a href="projectDetail.html">PROJECT DETAIL</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="contentContainer">
+      <div class="banner"></div>
+      <div class="subBanner"></div>
+      <img id="codingDojoLogo" src="images/CodingDojo_portfolioColor.png" alt="Coding Dojo Icon">
+      <br>
+      <div class="contentBoundaries">
+         <p class="paragraphContent">Coding Dojo is a technical bootcamp that teaches students to code in 3 different
+            stacks over a 14 week
+            period, Python, Ruby on Rails, and MEAN.
+            At the end of each stack, students are challenged to complete a fully functioning application in under 5
+            hours.
+            If a accomplished, then the student recieves a red belt, but if a student can manage the advanced
+            challenges
+            in the same timeframe, then they are awarded the black belt.</p>
+         <div class="blackBeltDescription">
+            <p class="superEmphasize">Black Belt</p>
+            <p class="emphasize">The Highest Honor Awarded</p>
+            <div class="blackBeltBackgroundFilter"></div>
+            <div class="blackBeltBackground"></div>
+         </div>
+      </div>
+
+      <!-- <div class="banner"></div>
+            <div class="subBanner"></div> -->
+      <div class="banner">
+         <h3 class="title">MY PERFORMANCE</h3>
+      </div>
+      <div class="subBanner"></div>
+      <div class="allThumbnails">
+         <div class="thumbnailsRow">
+            <div class="performThumbnails">
+               <p class="emphasize">133</p>
+               <h3>Assignments</h3>
+               <p class="emphasize">13</p>
+               <h3>Projects</h3>
+            </div>
+            <div class="performThumbnails">
+               <h3>Black Belts</h3>
+               <p><span class="emphasize">3</span>/3*</p>
+               <img id="blackBeltNinja" src="../Portfolio/images/blackBeltNinjaTrans.png" alt="">
+               <p class="footnoteFont">*achieved with one attempt</p>
+            </div>
+            <div class="performThumbnails">
+               <p class="emphasize">75-80hrs</p>
+               <h3>Hrs per Week</h3>
+               <p class="emphasize">~1000hrs</p>
+               <h3>Total Hours</h3>
+            </div>
+         </div>
+
+      </div>
+      <div class="banner allStack">
+         <h3 class="title">ALL STACKS</h3>
+      </div>
+      <div class="subBanner allStack"></div>
+      <div class="allStack">
+         <div class="stackContainer">
+            <img class="stackImg" src="images/python.png" alt="Coding Dojo Icon">
+            <div class="stackTitle stackFormatting">PYTHON</div>
+            <div class="stackMenu stackFormatting" id="help" onclick="open()">
+               <ul>
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>Djano</li>
+                  <li>MySQL</li>
+                  <li>Ajax</li>
+               </ul>
+            </div>
+         </div>
+         <div class="stackContainer">
+            <img class="stackImg" src="images/RUBY.png" alt="Coding Dojo Icon">
+            <div class="stackTitle stackFormatting">RUBY</div>
+            <div class="stackMenu stackFormatting" onclick="open()">
+               <ul>
+                  <li>Ruby</li>
+                  <li>Rails</li>
+                  <li>RSpec</li>
+                  <li>Capybara</li>
+                  <li>PostgreSQL</li>
+               </ul>
+            </div>
+         </div>
+         <div class="stackContainer">
+            <img class="stackImg" src="images/MEAN.png" alt="Coding Dojo Icon">
+            <div class="stackTitle stackFormatting">MEAN</div>
+            <div class="stackMenu stackFormatting" onclick="open()">
+               <ul>
+                  <li>JavaScript</li>
+                  <li>MongoDB</li>
+                  <li>Express.js</li>
+                  <li>Angular</li>
+                  <li>Node.js</li>
+                  <li>Socket.io</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="banner BootcampRecg">
+         <h3 class="title">BOOTCAMP RECOGNITION</h3>
+      </div>
+      <div class="subBanner BootcampRecg"></div>
+      <a class="BootcampRecg-a" href="https://www.mitinclusiveinnovation.com/winners/coding-dojo/" target="_blank">MIT
+         Inclusive Innovation
+         Award</a> <br>
+      <a class="BootcampRecg-a" href="https://www.geekwire.com/geekwire-200/" target="_blank">GeekWire's Top 200
+         Prominent Startups: #93 out
+         of 1339 statups
+         listed</a>
+   </div>
+   </div>
+   <div class="footerSection banner">
+      <div class="contentContainer">
+         <p><b>Email:</b> tbkrft567@gmail.com</p>
+         <p><b>Built By:</b> Zach Kraft</p>
+         <p><b>Phone:</b> (512)567-7011</p>
+      </div>
+   </div>
+   <script>
+      function myFunction(selection) {
+         selection.classList.toggle("change")
+         document.getElementsByClassName("menu-content")[0].classList.toggle('openMenu')
+      }
+   </script>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script> -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script> -->
+</body>
+
+</html>

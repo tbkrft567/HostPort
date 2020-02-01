@@ -1,0 +1,74 @@
+.stacks{
+   border: none;
+}
+.stackImage{
+   height: 100px;
+   width: 100px;
+   vertical-align: top;
+}
+.StackDetails{
+   font-size: 14px;
+   margin-left: 15px;
+   border: 5px ridge #3f3b4d;
+   display: inline-block;
+   width: 450px;
+}
+
+.stackImg {
+   position: absolute;
+   margin: -50px;
+   width: 100px;
+}
+
+.stackContainer {
+   border: 2px solid black;
+   padding: 5px;
+   display: inline-block;
+   height: 375px;
+   vertical-align: top;
+   margin: 50px 0px 10px 10px;
+   border-radius: 3px;
+   background-image: linear-gradient(rgba(139, 186, 187, 0.5), rgba(199, 240, 219, 0.3));
+}
+
+.stackFormatting {
+   width: 300px;
+   margin: 10px;
+   border: 2px solid grey;
+   border-radius: 3px;
+}
+
+.stackTitle {
+   margin: 55px 10px 10px 10px;
+   background-image: linear-gradient(#464159, #6C7B95, #8BBABB);
+   font-weight: bold;
+   font-size: 1.25em;
+   color: white;
+   letter-spacing: 2.5px;
+}
+
+.stackMenu {
+   height: 10px;
+   overflow: hidden;
+   text-align: left;
+   font-size: 1.6em;
+   background-color: rgba(128, 128, 128, 0.35);
+}
+
+.stackMenu:hover {
+   height: 65%;
+}
+
+@media only screen and (max-width: 480px){
+   .allStack{
+      display: none;
+   }
+   .BootcampRecg-a{
+      font-size: .75em;
+   }
+}
+@media only screen and (min-width: 481px){
+   .BootcampRecg{
+      display: none;
+   }
+}
