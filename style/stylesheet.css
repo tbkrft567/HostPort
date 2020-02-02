@@ -11,7 +11,6 @@
    width: 95%;
    margin: 0px auto;
    text-align: center;
-   /* outline: 2px solid fuchsia; */
 }
 .contentContainer{
    width: 95%;
@@ -22,12 +21,9 @@
 .paragraphContent{
    text-align: justify;
    text-justify: inter-word;
-   /* margin-left: 15px; */
    font-size: 13px;
    display: inline-block;
    width: 95%;
-   /* text-indent: 10px; */
-   /* outline: 2px solid fuchsia; */
 }
 .highlighContent{
    display: list-item;
@@ -52,6 +48,10 @@
    background-image: linear-gradient(#C7F0DB, #8BBABB, #C7F0DB);
    border-radius: 7px;
    margin: 25px 2.65% 0px 2.65%;
+   padding: 13px 0px 0px 0px;
+}
+.banner h3{
+   font-size: 1.25em;
 }
 .subBanner{
    height: 15px;
