@@ -48,15 +48,10 @@
 }
 
 .stackMenu {
-   height: 10px;
-   overflow: hidden;
+   height: 240px;
    text-align: left;
    font-size: 1.6em;
    background-color: rgba(128, 128, 128, 0.35);
-}
-
-.stackMenu:hover {
-   height: 65%;
 }
 
 @media only screen and (max-width: 480px){
